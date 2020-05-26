@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Nick Black - Charlotte, NC - Software Engineer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./timer.css" />
+</head>
+
+<body>
+    <div class="main-container">
+
+        <header class="flexContainer">
+            <h1>Nick Black</h1>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="resume.html">resume</a></li>
+                <li><a href="portfolio.html">portfolio</a></li>
+                <li><a href="todo.html">todo</a></li>
+                <li><a href="https://github.com/nickBlack4">github</a></li>
+                <li>
+                    <a href="http://www.nickblackguitar.com" style="color: greenyellow;"
+                        >music</a
+                    >
+                </li>
+            </ul>
+        </nav>
+
+
+        <div class="containerForBorderRadius">
+                <div class="contentContainer">
+                        <p>
+                            These projects were added almost two years ago.  I have been putting newer things on GitHub for the convenience.
+                        </p>
+
+                        <hr />
+
+                        <p class="projectDescription">
+                            <h2>Nadeen's Hermitage Haven</h2>
+                        </p>
+                        <p>
+                            This is a restaurant in Nashville I built a website for.
+                        </p>
+                        <!-- slideshow -->
+                        <div class="slideShow">
+                            <img class="mySlides" src="images/portfolioWebsites/slideShow/nadeens.png">
+                            <img class="mySlides" src="images/portfolioWebsites/slideShow/nadeens2.png">
+                            <img class="mySlides" src="images/portfolioWebsites/slideShow/nadeensContact.png">
+
+                        </div>
+
+                        <!-- buttons that target mySlides class to change pictures -->
+                        <div>
+                            <!-- function takes argument n and mySlidesN which fits class name of img -->
+                            <button class="slideButton" onclick="plusDivs(-1, 'mySlides')">Prev</button>
+                            <button class="slideButton" onclick="plusDivs(1, 'mySlides')">Next</button>
+                        </div>
+
+                        <br />
+                        <hr />
+
+                        <p class="projectDescription">
+                            <h2>Nickblackguitar.com</h2>
+
+                        </p>
+                        <p>
+                            This website is my personal one for my music.
+                        </p>
+                        <!-- slideshow -->
+                        <div class="slideShow">
+                            <img class="mySlides2" src="images/portfolioWebsites/slideShow/nickblackguitarWebsite.png">
+                            <img class="mySlides2" src="images/portfolioWebsites/slideShow/nickblackguitarMobile.png">
+                        </div>
+                        <!-- buttons that target mySlides2 -->
+                        <div>
+                            <button class="slideButton" onclick="plusDivs(-1, 'mySlides2')">Prev</button>
+                            <button class="slideButton" onclick="plusDivs(1, 'mySlides2')">Next</button>
+                        </div>
+
+                        <br />
+                        <hr />
+
+                        <p class="projectDescription">
+                            <h2>Honky Tonkify</h2>
+
+                        </p>
+                        <p>
+                            This app was built out with React JS and json-server. There is a random lyric generator built in that will allow
+                            you to randomly generate lyrics based on a simplistic model of a sentence. It fits them
+                            together in a way that while linguistically makes sense--doesn't quite semantically.  A humorous challenge.
+                        </p>
+
+
+                        <div class="slideShow">
+                            <img class="mySlides3" src="images/portfolioWebsites/slideShow/1.png">
+                            <img class="mySlides3" src="images/portfolioWebsites/slideShow/2.png">
+                            <img class="mySlides3" src="images/portfolioWebsites/slideShow/3.png">
+                            <img class="mySlides3" src="images/portfolioWebsites/slideShow/4.png">
+                            <img class="mySlides3" src="images/portfolioWebsites/slideShow/5.png">
+                            <img class="mySlides3" src="images/portfolioWebsites/slideShow/6.png">
+                            <img class="mySlides3" src="images/portfolioWebsites/slideShow/7.png">
+                        </div>
+                        <!-- buttons that target mySides3 -->
+                        <div>
+                            <button class="slideButton" onclick="plusDivs(-1, 'mySlides3')">Prev</button>
+                            <button class="slideButton" onclick="plusDivs(1, 'mySlides3')">Next</button>
+                        </div>
+
+
+                        <script>
+                            var slideIndex = 1;
+                            let mySlidesN = "mySlides";
+                            // needed to call each one separately to get initial setup to be correct with pictures hidden except first slide
+                            showDivs(slideIndex, mySlidesN);
+                            showDivs(slideIndex, "mySlides2");
+                            showDivs(slideIndex, "mySlides3");
+
+                            function plusDivs(n, mySlidesN) {
+                                showDivs(slideIndex += n, mySlidesN);
+                            }
+
+                            function showDivs(n, mySlidesN) {
+                                var i;
+                                var x = document.getElementsByClassName(mySlidesN);
+                                if (n > x.length) { slideIndex = 1 }
+                                if (n < 1) { slideIndex = x.length }
+                                for (i = 0; i < x.length; i++) {
+                                    x[i].style.display = "none";
+                                }
+                                x[slideIndex - 1].style.display = "block";
+                            }
+                        </script>
+
+                    
+
+                </div>
+            
+
+        </div>
+
+    <!-- main container -->    
+    </div>
+
+    <footer>
+        <div class="timer-container">
+          <div class="countup" id="timer"></div>
+        </div>
+    </footer>
+  
+    <script src="./timer.js"></script>
+</body>
+
+</html>

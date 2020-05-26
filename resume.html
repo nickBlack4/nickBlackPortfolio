@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Nick Black - Charlotte, NC - Software Engineer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./timer.css" />
+  </head>
+
+  <body>
+    <div class="main-container">
+      <header class="flexContainer">
+        <h1>Nick Black</h1>
+      </header>
+
+      <nav>
+        <ul>
+          <li><a href="index.html">home</a></li>
+          <li><a href="resume.html">resume</a></li>
+          <li><a href="portfolio.html">portfolio</a></li>
+          <li><a href="todo.html">todo</a></li>
+          <li><a href="https://github.com/nickBlack4">github</a></li>
+          <li>
+            <a href="http://www.nickblackguitar.com" style="color: greenyellow;"
+              >music</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <div class="containerForBorderRadius">
+        <div class="contentContainer">
+          <div class="resume">
+            <p class="note">
+              I am currently working with TypeScript and Angular.
+            </p>
+
+            <article class="job">
+              <h2>Software Engineer - Leidos - May 2019 to February 2020</h2>
+
+              <p>
+                I started my work at Leidos working on an app called Pathways.
+                Pathways helped keep track of patients and their journey through
+                the hospital.
+                <br /><br />
+
+                Pathways was built utilizing Polymer, HTML, and CSS on the front
+                end. The unit testing was done with Sinon, Mocha, and Chai. The
+                backend was LEAF (a proprietary framework)/Java, and utilized
+                Docker for container management, MongoDB for the database, and
+                Kafka/Zookeeper for its messaging system. Build automation was
+                handled by Jenkins.
+                <br /><br />
+                After Pathways, I worked on an application called Command
+                Center. We borrowed services from Pathways and extended some of
+                the base functionality to create a one stop shop application for
+                hospitals. Command Center was developed with similar tooling to
+                Pathways except we used React on the front-end and Kubernetes
+                for the container system.
+              </p>
+            </article>
+
+            <hr />
+
+            <article class="job">
+              <h2>Web Developer - Quaver Music - Oct 2018 to May 2019</h2>
+
+              <p>
+                My time at Quaver was spent writing Dart and Stage XL code to
+                complete micro games. I would take assets given to me in
+                Illustrator by the art team and create small games utilizing
+                gaffs, sprites, sound files, etc. These would be deployed into
+                our dev environment and once we tested them fully, they were
+                moved to alpha and then eventually production where they were
+                embedded into the live site/curriculum.
+              </p>
+            </article>
+          </div>
+        </div>
+      </div>
+
+      <!-- main container -->
+    </div>
+
+    <footer>
+      <div class="timer-container">
+        <div class="countup" id="timer"></div>
+      </div>
+    </footer>
+
+    <script src="./timer.js"></script>
+  </body>
+</html>

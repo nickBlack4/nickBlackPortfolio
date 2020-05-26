@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css?family=Trade+Winds&display=swap');
+
+body {
+  margin: 1.5em;
+  font-family: Arial, Helvetica, sans-serif;
+  /* background: rgba(56, 54, 56, 0.9); */
+  background: powderblue;
+}
+
+.main-container {
+  width: 60%;
+  margin: 0 auto;
+}
+
+div.contentContainer {
+  background: rgb(197, 196, 195);
+  padding: 1em;
+  /* adjusting this will adjust height of background image */
+  height: 100%;
+}
+
+div.containerForBorderRadius {
+  border-radius: 0 0 10px 10px;
+  border-right: 1em solid black;
+  border-left: 1em solid black;
+  border-bottom: 1em solid black;
+}
+
+/* flex container for header */
+.flexContainer {
+  border-top: 0.7em solid black;
+  border-right: 1em solid black;
+  border-left: 1em solid black;
+  border-bottom: 0.38em solid black;
+  display: flex;
+  background-color: black;
+  background-image: url('./images/paisely.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  border-radius: 10px 10px 0px 0;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.flexContainer h1 {
+  font-size: 6em;
+  text-shadow: 2px 2px 5px rgb(121, 59, 139);
+  color: rgb(243, 230, 230);
+  margin: 0;
+  margin-top: 0.2em;
+  padding-bottom: 0.3em;
+  font-family: 'Trade Winds', sans-serif;
+}
+
+nav a {
+  padding: 0;
+  margin: 0;
+}
+
+nav {
+  background: rgba(51, 3, 47, 0.5);
+  border-left: 1em solid black;
+  border-right: 1em solid black;
+  margin: 0;
+  padding: 0.1em;
+  border-bottom: 1px solid black;
+}
+
+nav ul {
+  margin: 0;
+}
+
+nav ul li {
+  display: inline;
+  list-style-type: none;
+  font-size: 2em;
+  color: white;
+  text-shadow: 1px 2px 2px #000;
+  margin-right: 1em;
+  font-family: 'K2D', sans-serif;
+}
+
+nav ul li a:link {
+  color: white;
+  text-decoration: none;
+}
+
+nav ul li a:visited {
+  color: white;
+}
+
+nav ul li a:hover {
+  color: rgb(250, 236, 176);
+}
+
+.projectDescription {
+  flex-direction: column;
+}
+
+.slideShow img {
+  width: 99%;
+  height: 100%;
+}
+
+/* buttons for slideShow */
+.slideButton {
+  width: 49%;
+  height: 2em;
+  background: rgba(51, 3, 47, 0.5);
+  border: none;
+  border-radius: 0 0 10px 10px;
+  border-bottom: 1px solid black;
+  /* box shadow only on bottom */
+  box-shadow: 0 4px 10px -2px rgb(37, 35, 35);
+  font-size: 1.2em;
+  padding: 0;
+  margin: 0;
+  text-shadow: 1px 1px rgb(167, 164, 164);
+}
+
+.slideButton:hover {
+  background: rgba(110, 25, 103, 0.5);
+  cursor: pointer;
+}
+
+.slideButton:focus {
+  outline: 0;
+}
+
+.books .hasRead {
+  text-decoration: line-through;
+}
+
+.job h2 {
+  font-size: 1.5em;
+}
+
+article {
+  padding: 5px;
+}
+
+/* resume job note */
+.note {
+  background-color: rgb(230, 230, 230);
+  border: 1px dashed black;
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: -1px -1px 2px #000;
+  font-size: 0.9em;
+  font-style: italic;
+  width: 75%;
+  margin: auto;
+}
+
+#nick-image img {
+  width: 60%;
+  height: 60%;
+  box-shadow: 0px 0px 5px #000;
+  border: 2px solid black;
+  padding: 1px;
+  display: block;
+  margin: auto;
+}
+
+/**********************
+  Github Chart
+***********************/
+.github-chart {
+  background-color: black;
+}
+
+.github-chart img {
+  width: 95%;
+  height: auto;
+  padding: 5px;
+}
+
+/*******************
+	Links
+********************/
+a:link {
+  color: rgb(89, 8, 136);
+}
+
+a:visited {
+  color: rgb(89, 8, 136);
+}
+
+a:hover {
+  color: rgb(54, 4, 83);
+}
+
+/*******************
+	Media Queries
+*******************/
+
+/* Header breaks here */
+@media only screen and (max-width: 680px) {
+  .flexContainer h1 {
+    font-size: 3em;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+}
+
+/* iPad pro */
+@media only screen and (max-width: 1024px) {
+  .main-container {
+    width: 90%;
+  }
+
+  .flexContainer h1 {
+    font-size: 5em;
+  }
+
+  /* buttons for slideShow */
+  .slideButton {
+    width: 46%;
+    font-size: 0.7em;
+  }
+
+  .slideShow img {
+    width: 93%;
+  }
+}
+
+/* iPad */
+@media only screen and (max-width: 768px) {
+  .main-container {
+    width: 90%;
+  }
+
+  .flexContainer h1 {
+    font-size: 5em;
+  }
+
+  /* buttons for slideShow */
+  .slideButton {
+    width: 46%;
+    font-size: 0.7em;
+  }
+
+  .slideShow img {
+    width: 93%;
+  }
+}
+
+/* MOBILE PHONES */
+@media only screen and (max-width: 415px) {
+  .main-container {
+    width: 100%;
+  }
+
+  .slideButton {
+    width: 35%;
+    font-size: 0.7em;
+  }
+
+  .slideShow img {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* resume */
+  nav ul li {
+    display: inline;
+    list-style-type: none;
+    font-size: 1.3em;
+    color: white;
+    text-shadow: 1px 2px 2px #000;
+    margin-right: 1em;
+  }
+
+  .flexContainer h1 {
+    font-size: 3.5em;
+    text-shadow: 2px 2px 5px rgb(19, 0, 12);
+    color: rgb(235, 217, 217);
+    margin: 0;
+  }
+
+  #intro {
+    font-size: 0.9em;
+    padding-right: 1em;
+  }
+
+  /* buttons for slideShow */
+  .slideButton {
+    width: 49%;
+    font-size: 0.7em;
+  }
+}
