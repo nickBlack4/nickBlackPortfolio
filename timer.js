@@ -1,5 +1,6 @@
 window.onload = function() {
   // Month Day, Year Hour:Minute:Second
+  // June 16, 2019 is the day I...
   countUpFromTime("Jun 16, 2019 12:00:00");
 };
 
