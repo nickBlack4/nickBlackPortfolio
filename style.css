@@ -7,6 +7,28 @@ body {
   background: powderblue;
 }
 
+#long-btn {
+ box-shadow: 1px 2px 3px #000;
+ background-color: rgb(111, 69, 149);
+ color: white;
+ padding: 5px;
+ width: 60px;
+ border-radius: 3px;
+}
+
+#long-btn:hover {
+  background-color: rgb(121, 59, 139);
+  cursor: pointer;
+}
+
+#long-btn:focus {
+  outline: none;
+}
+
+#long-bio {
+  display: none;
+}
+
 .main-container {
   width: 60%;
   margin: 0 auto;
