@@ -1,10 +1,10 @@
-window.onload = function() {
+window.onload = function () {
   // Month Day, Year Hour:Minute:Second
   // June 16, 2019 is the day I...
   countUpFromTime("Jun 16, 2019 12:00:00");
 };
 
-const countUpFromTime = countFrom => {
+const countUpFromTime = (countFrom) => {
   countFrom = new Date(countFrom).getTime();
   var now = new Date(),
     countFrom = new Date(countFrom),
@@ -14,10 +14,6 @@ const countUpFromTime = countFrom => {
     secondsInAHour = 60 * 60 * 1000;
 
   days = Math.floor((timeDifference / secondsInADay) * 1);
-
-  years = Math.floor(days / 365);
-
-  if (years > 1) days = days - years * 365;
 
   hours = Math.floor(((timeDifference % secondsInADay) / secondsInAHour) * 1);
   mins = Math.floor(
@@ -30,7 +26,6 @@ const countUpFromTime = countFrom => {
   );
 
   document.getElementById("timer").innerHTML = `
-        <div>${years}<span>years</span></div>
         <div>${days}<span>days</span></div>
         <div>${hours}<span>hours</span></div>
         <div>${mins}<span>mins</span></div>
