@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Trade+Winds&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Trade+Winds&display=swap");
 
 body {
   margin: 1.5em;
@@ -8,12 +8,12 @@ body {
 }
 
 #long-btn {
- box-shadow: 1px 2px 3px #000;
- background-color: rgb(111, 69, 149);
- color: white;
- padding: 5px;
- width: 60px;
- border-radius: 3px;
+  box-shadow: 1px 2px 3px #000;
+  background-color: rgb(111, 69, 149);
+  color: white;
+  padding: 5px;
+  width: 60px;
+  border-radius: 3px;
 }
 
 #long-btn:hover {
@@ -56,7 +56,7 @@ div.containerForBorderRadius {
   border-bottom: 0.38em solid black;
   display: flex;
   background-color: black;
-  background-image: url('./images/paisely.png');
+  background-image: url("./images/paisely.png");
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -72,7 +72,7 @@ div.containerForBorderRadius {
   margin: 0;
   margin-top: 0.2em;
   padding-bottom: 0.3em;
-  font-family: 'Trade Winds', sans-serif;
+  font-family: "Trade Winds", sans-serif;
 }
 
 nav a {
@@ -100,7 +100,7 @@ nav ul li {
   color: white;
   text-shadow: 1px 2px 2px #000;
   margin-right: 1em;
-  font-family: 'K2D', sans-serif;
+  font-family: "K2D", sans-serif;
 }
 
 nav ul li a:link {
@@ -151,6 +151,10 @@ nav ul li a:hover {
 }
 
 .books .hasRead {
+  text-decoration: line-through;
+}
+
+.working-on .movedOn {
   text-decoration: line-through;
 }
 
